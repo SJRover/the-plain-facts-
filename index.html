@@ -43,83 +43,100 @@
  .related a{display:block;text-decoration:none;padding:6px 0}
  footer{margin-top:48px;color:#9aa4b2;font-size:13px;border-top:1px solid var(--line);padding-top:16px}
 
- .lead{color:var(--dim);font-size:1.05em;margin:6px 0 22px;font-family:-apple-system,system-ui,sans-serif}
- .grid{display:grid;gap:18px}
- .post{display:grid;grid-template-columns:160px 1fr;gap:16px;text-decoration:none;color:inherit;
-   border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;font-family:-apple-system,system-ui,sans-serif}
- .post:hover{border-color:var(--brand)}
- .thumb{width:160px;height:120px;object-fit:cover;background:#eef2f7}
- .thumb.ph{background:linear-gradient(135deg,var(--brand),var(--brand2))}
- .pbody{padding:12px 14px 12px 0}
- .post h3{margin:.1em 0 .2em;font-size:1.15em}
- .post p{margin:.2em 0;color:var(--dim);font-size:.92em}
- .pmeta{color:#8a94a3;font-size:.8em;margin-top:6px}
- @media(max-width:560px){.post{grid-template-columns:1fr}.thumb{width:100%}}</style></head>
+ body{font-family:-apple-system,system-ui,'Segoe UI',sans-serif}
+ .masthead{text-align:center;padding:26px 0 8px;border-bottom:2px solid var(--ink);margin-bottom:0}
+ .masthead h1{font-size:2.6em;letter-spacing:-1px;margin:0}
+ .masthead .lead{color:var(--dim);font-size:1.05em;margin:8px 0 0}
+ .sect{font-size:.8em;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);
+   border-bottom:1px solid var(--line);padding-bottom:6px;margin:34px 0 16px}
+ .hero-card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);
+   border-radius:16px;overflow:hidden;margin-top:22px;transition:.2s;box-shadow:0 1px 3px #0000000a}
+ .hero-card:hover{box-shadow:0 8px 30px #0000001a;transform:translateY(-2px)}
+ .hcover{width:100%;height:300px;object-fit:cover;background:#eef2f7;display:block}
+ .hbody{padding:20px 24px 24px}
+ .kicker{display:inline-block;background:var(--brand);color:#fff;font-size:.7em;font-weight:700;
+   text-transform:uppercase;letter-spacing:1px;padding:3px 10px;border-radius:99px}
+ .hero-card h2{font-size:1.9em;line-height:1.15;letter-spacing:-.5px;margin:.35em 0 .25em}
+ .hero-card p{color:var(--dim);font-size:1.05em;margin:.2em 0}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
+ .card{display:flex;flex-direction:column;text-decoration:none;color:inherit;
+   border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:.2s}
+ .card:hover{box-shadow:0 8px 24px #00000014;transform:translateY(-2px)}
+ .ccover{width:100%;height:170px;object-fit:cover;background:#eef2f7}
+ .ph{background:linear-gradient(135deg,var(--brand),var(--brand2))}
+ .cbody{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+ .card h3{margin:0 0 .3em;font-size:1.15em;line-height:1.25}
+ .card p{margin:0 0 auto;color:var(--dim);font-size:.92em}
+ .pmeta{color:#8a94a3;font-size:.8em;margin-top:10px}</style></head>
 <body>
 <div class="site-head">
   <a class="brand" href="index.html">The Plain Facts</a>
   <nav><a href="index.html">Home</a><a href="about.html">About</a></nav>
 </div>
-<h1>The Plain Facts</h1>
-<div class="lead">Clear, honest explainers on the things people are talking about.</div>
-<!-- AD SLOT: ads appear here once ADSENSE_CLIENT is set and AdSense approves the site -->
-<div class="ad" data-ad>Advertisement</div>
-<div class="grid">
-<a class="post" href="understanding-tides-causes-mechanics-and-impact.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
-    <h3>Understanding Tides: Causes, Mechanics, and Impact</h3>
+<div class="masthead"><h1>The Plain Facts</h1><div class="lead">Clear, honest explainers on the things people are talking about.</div></div>
+<a class="hero-card" href="understanding-tides-causes-mechanics-and-impact.html">
+  <img class="hcover" src="https://upload.wikimedia.org/wikipedia/commons/5/54/Bay_of_Fundy.jpg" alt="" loading="lazy" onerror="this.classList.add('ph')">
+  <div class="hbody">
+    <span class="kicker">Featured</span>
+    <h2>Understanding Tides: Causes, Mechanics, and Impact</h2>
     <p>Discover what causes tides, how they work, and their effects on marine life and coastal activities.</p>
     <div class="pmeta">By The Plain Facts Desk · 30 June 2026</div>
   </div></a>
-<a class="post" href="does-eating-late-at-night-lead-to-weight-gain.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
+<!-- AD SLOT: ads appear here once ADSENSE_CLIENT is set and AdSense approves the site -->
+<div class="ad" data-ad>Advertisement</div>
+<div class="sect">Latest stories</div><div class="grid">
+<a class="card" href="does-eating-late-at-night-lead-to-weight-gain.html">
+  <div class="ccover ph"></div>
+  <div class="cbody">
     <h3>Does Eating Late at Night Lead to Weight Gain?</h3>
     <p>Explore the facts about late-night eating and its connection to weight gain. Learn the real factors that influence your weight.</p>
     <div class="pmeta">By Samuel Johnston · 30 June 2026</div>
   </div></a>
-<a class="post" href="the-origin-of-time-zones-a-historical-overview.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
+<a class="card" href="the-origin-of-time-zones-a-historical-overview.html">
+  <img class="ccover" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_Time_Zones_Map.svg" alt="" loading="lazy" onerror="this.classList.add('ph')">
+  <div class="cbody">
     <h3>The Origin of Time Zones: A Historical Overview</h3>
     <p>Discover how the concept of time zones emerged from railway expansion and globalization in the 19th century.</p>
     <div class="pmeta">By Editorial Staff · 30 June 2026</div>
   </div></a>
-<a class="post" href="understanding-cloud-computing-how-it-works-simplified.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
+<a class="card" href="understanding-cloud-computing-how-it-works-simplified.html">
+  <img class="ccover" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg" alt="" loading="lazy" onerror="this.classList.add('ph')">
+  <div class="cbody">
     <h3>Understanding Cloud Computing: How It Works Simplified</h3>
     <p>Discover how cloud computing operates, its benefits, and why it's essential for modern businesses.</p>
     <div class="pmeta">By The Plain Facts Desk · 30 June 2026</div>
   </div></a>
-<a class="post" href="why-leaves-change-color-in-fall-the-science-explained.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
+<a class="card" href="why-leaves-change-color-in-fall-the-science-explained.html">
+  <img class="ccover" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Momiji_%E7%B4%85%E8%91%89%E3%81%99%E3%82%8B%E3%83%A4%E3%83%9E%E3%83%A2%E3%83%9F%E3%82%B8_B221212.JPG" alt="" loading="lazy" onerror="this.classList.add('ph')">
+  <div class="cbody">
     <h3>Why Leaves Change Color in Fall: The Science Explained</h3>
     <p>Discover the science behind why leaves change color in the fall, including chlorophyll breakdown, environmental factors, and more.</p>
     <div class="pmeta">By Samuel Johnston · 30 June 2026</div>
   </div></a>
-<a class="post" href="why-do-people-procrastinate-and-how-to-stop-effectively.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
+<a class="card" href="why-do-people-procrastinate-and-how-to-stop-effectively.html">
+  <img class="ccover" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Depiction_of_a_person_suffering_from_Insomnia_%28sleeplessness%29_%28cropped%29.png" alt="" loading="lazy" onerror="this.classList.add('ph')">
+  <div class="cbody">
     <h3>Why Do People Procrastinate and How to Stop Effectively</h3>
     <p>Discover the psychology behind procrastination and effective strategies to overcome it for a more productive life.</p>
     <div class="pmeta">By Editorial Staff · 30 June 2026</div>
   </div></a>
-<a class="post" href="create-a-budget-that-works-a-step-by-step-guide.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
+<a class="card" href="create-a-budget-that-works-a-step-by-step-guide.html">
+  <img class="ccover" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Brooklyn_Museum_-_Comme_Sisyphe_-_Honor%C3%A9_Daumier.jpg" alt="" loading="lazy" onerror="this.classList.add('ph')">
+  <div class="cbody">
     <h3>Create a Budget That Works: A Step-by-Step Guide</h3>
     <p>Learn how to create an effective budget that empowers you to achieve financial freedom and reach your goals.</p>
     <div class="pmeta">By The Plain Facts Desk · 30 June 2026</div>
   </div></a>
-<a class="post" href="does-drinking-water-before-meals-aid-weight-loss.html">
-  <div class="thumb ph"></div>
-  <div class="pbody">
+<a class="card" href="does-drinking-water-before-meals-aid-weight-loss.html">
+  <img class="ccover" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg" alt="" loading="lazy" onerror="this.classList.add('ph')">
+  <div class="cbody">
     <h3>Does Drinking Water Before Meals Aid Weight Loss?</h3>
     <p>Discover how drinking water before meals may help with weight loss and improve overall health.</p>
     <div class="pmeta">By Samuel Johnston · 30 June 2026</div>
   </div></a>
 </div>
+
+<!-- AD SLOT: ads appear here once ADSENSE_CLIENT is set and AdSense approves the site -->
+<div class="ad" data-ad>Advertisement</div>
+<footer>Clear, honest explainers on the things people are talking about. • This page may contain affiliate links.</footer>
 </body></html>
